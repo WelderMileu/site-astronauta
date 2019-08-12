@@ -1,5 +1,5 @@
 (function(){
-	// setInterval(alert('Site em desenvolvimento'),3000);
+	setInterval(alert('Site em desenvolvimento'),3000);
 
 	let products = [
 		{
@@ -19,19 +19,19 @@
 			desconto:0
 		},
 		{
-			status:2,
+			status:1,
 			marca:'Rider',
 			name:'Xexena002',
 			src:'img10.jpg',
 			valor: 15000,
-			desconto:0
+			desconto:3934433.25
 		},
 		{
 			status:1,
 			marca:"Puma",
 			name:'Colapse3882',
 			src:'img04.jpg',
-			valor: 20,
+			valor: 399.55,
 			desconto:0
 		},
 		{
@@ -52,12 +52,9 @@
 		}
 	];
 
-	const $ = (e) => {
-		return document.querySelector(e);
-	}
-
 	console.log(products);
 	let list = products.map(function(elem){
+
 		const soma = () => {
 			if (elem.status == 2) {
 				return "<span class='status'>Esgotado</span>";
@@ -70,7 +67,7 @@
 			if (elem.status == 2) {
 				return "<button class='bloqueio' disabled='disabled'>Comprar</button>";
 			}else{
-				return "<button class='button'>Comprar</button>";
+				return `<button class='button'>Comprar</button>`;
 			}
 		}
 
@@ -85,6 +82,7 @@
 				return "";
 			}
 		}
+
 		document.getElementById("conteudo").innerHTML +=
 		`
 		<div class="container">
@@ -116,6 +114,6 @@
 			</div>
 		</div>
 		`;
-	})
 
+	})
 })();
