@@ -98,7 +98,7 @@
 					<img src="img/${elem.src}">
 				</div>
 				<div class="information">
-					<h3>Description the products</h3>
+					<h3>Products the Description</h3>
 					<p>Venha a nossa loja e conheça os nossos produtos que sao os melhores da regiao,
 						temos muitas promoçães alem de produtos baratos e de qualidade vamo que vamo
 						e nos cara tamo junto.</p>

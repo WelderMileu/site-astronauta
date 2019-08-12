@@ -132,6 +132,7 @@ nav .search form div button {
   padding: 20px;
   opacity: 0.7;
   color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px #fff, -1px -1px #fff;
 }
 .container .content .information .money {
   margin-top: 50px;
