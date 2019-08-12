@@ -1,0 +1,205 @@
+$color-01:#000;
+$color-02:#999;
+$color-03:#fff;
+$color-04:red;
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: 'calibri','Arial','Roboto',sans-serif;
+}
+
+body{
+	background: linear-gradient(to right,black 1%,#fff 10%);
+}
+
+.sidebar{
+	display: flex;
+	article{
+		margin-top:30px;
+		img{
+			margin-top:20px;
+		}
+	}
+}
+
+nav{
+	// background-image:url('../img/atlet2.jpg');
+	// background-size: cover;
+	// background-repeat:no-repeat;
+	background-color:$color-01;
+	width: 100%;
+	height: 400px;
+	// display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding:0px;
+	.logo{
+		text-transform: uppercase;
+		margin-left:10%; 
+	}
+	a{
+		text-decoration: none;
+		color:$color-02;
+	} 
+	ul{
+		display: flex;
+		background:#f1f1f1;
+		width: 100%;
+		li{
+			list-style:none;
+			padding:3px 5px;
+			a{
+				font-size: 1em;
+				font-family: 'calibri',sans-serif;
+			}
+		}
+	}
+	.search{
+		visibility: hidden;
+		margin-top:150px;
+		form{
+			div{
+				display: flex;
+				input{
+					border:none;
+					width: 300px;
+					padding:5px;
+					font-family: 'Arial',sans-serif;
+				}
+				button{
+					padding:0 10px;
+					border:1px solid $color-03;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+.container{
+	width: 900px;
+	margin-left: 20%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	.content{
+		display: flex;
+		border:none;
+		padding:20px;
+		// overflow: hidden;
+		width: 60%;
+		background:transparent;
+		// box-shadow: 20px 10px 30px black;
+		margin-top:30px; 
+		.name{
+			z-index: 1;
+			width: 100px;
+			h1{
+				font-family: 'Roboto',sans-serif;
+				color:$color-02;
+				text-shadow: .5px .5px $color-03,-.5px -.5px $color-03;
+				text-transform: uppercase;
+				letter-spacing: 10px;
+			}
+			span{
+				font-family: 'Arial',sans-serif;
+				color:$color-02;
+				font-size: 0.8em;	
+			}
+		}
+		.image img{
+			transform: rotate(20deg);
+			padding-top:100px;
+			width: 200px;
+			transition: 1s;
+			&:hover{
+				transform: scale(2);
+			} 
+		}
+		.status{
+			color:$color-03;
+			text-shadow: 1px 1px $color-04, -1px -1px $color-04;
+			position:absolute;
+			text-transform: uppercase;
+			font-size: 5em;
+			margin-top:120px;
+			margin-left:-30px;
+			transform: rotate(30deg);
+			z-index: 1;
+		}
+		.information{
+			z-index: 1;
+			margin-left: 10px;
+			p{
+				text-align: justify;
+				padding:20px;
+				opacity: .7;
+				// overflow: scroll;
+				// height: 200px;
+				color: rgba(0,0,0,.8);
+			}
+			.money{
+				margin-top: 50px;
+				span{
+					color:$color-02;
+					font-weight: bold;
+					font-size: 1.6em;
+					margin:10px;
+				}
+				.button{
+					margin-top:5px; 
+					border:none;
+					padding:10px 50px;
+					font-size: 1.2em;
+					color:$color-03;
+					background:$color-01;
+					text-transform:uppercase;
+					text-shadow: 1px 1px 1px $color-01;
+					cursor: pointer;
+					transition: .5s;
+					font-weight: bold;
+					&:hover{
+						opacity: .5;
+					}
+				}
+			}
+		}
+		&::before{
+			visibility: hidden;
+			content: '';
+			position: absolute;
+			width: 200px;
+			height: 500px;
+			border:2px solid $color-02;
+			top: 70px;
+			left: 42%;
+			z-index: 0;
+			transform: rotate(310deg);
+		}
+	}
+}
+
+.bloqueio{
+	margin-top:5px; 
+	border:none;
+	padding:10px 50px;
+	font-size: 1.2em;
+	color:$color-03;
+	background:$color-04;
+	text-transform:uppercase;
+	text-shadow: 1px 1px 1px $color-01;
+	font-weight: bold;
+	cursor: no-drop;
+	opacity: .2;
+}	
+
+@media(max-width: 800px){
+	.container{
+		margin-left:5%;
+		.content{
+			width: 70%;
+		} 
+	}
+}
+
