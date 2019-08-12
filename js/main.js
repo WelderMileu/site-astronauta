@@ -1,5 +1,5 @@
 (function(){
-	setInterval(alert('Site em desenvolvimento'),3000);
+	// setInterval(alert('Site em desenvolvimento'),3000);
 
 	let products = [
 		{
@@ -7,42 +7,48 @@
 			marca:'Adidas',
 			name:'Futistril0933',
 			src:'img07.jpg',
-			valor: 12098
+			valor: 12098,
+			desconto:34000
 		},
 		{
 			status:1,
 			marca:'Fila',
 			name:'Constroso300',
 			src:'img02.jpg',
-			valor: 598
+			valor: 598,
+			desconto:0
 		},
 		{
 			status:2,
 			marca:'Rider',
 			name:'Xexena002',
 			src:'img10.jpg',
-			valor: 15000
+			valor: 15000,
+			desconto:0
 		},
 		{
 			status:1,
 			marca:"Puma",
 			name:'Colapse3882',
 			src:'img04.jpg',
-			valor: 20
+			valor: 20,
+			desconto:0
 		},
 		{
 			status:1,
 			marca:'Nike',
 			name:'Leproso4432',
 			src:'img05.jpg',
-			valor: 120.43
+			valor: 120.43,
+			desconto:240.30
 		},
 		{
 			status:2,
 			marca:'Olimpicos',
 			name:'Cobal3321',
 			src:'img06.jpg',
-			valor:130
+			valor:130,
+			desconto:2
 		}
 	];
 
@@ -68,6 +74,17 @@
 			}
 		}
 
+		const descont = () =>{
+			if (elem.desconto > 0 && elem.desconto > elem.valor) {
+				return `De<p style="color:red;font-size:1.5em;text-decoration: line-through;">
+				${elem.desconto.toLocaleString('pt-br',{
+					style:"currency",
+					currency:"BRL"
+				})}</p>Por`;
+			}else{
+				return "";
+			}
+		}
 		document.getElementById("conteudo").innerHTML +=
 		`
 		<div class="container">
@@ -86,6 +103,7 @@
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat.</p>
 					<div class="money">
+						${descont()}
 						<span>
 							${elem.valor.toLocaleString('pt-br',
 								{style:'currency',

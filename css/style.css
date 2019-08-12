@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   outline: none;
+  box-sizing: border-box;
   font-family: "calibri", "Arial", "Roboto", sans-serif;
+  -moz-font-smooth: antialiased;
 }
 
 body {
@@ -163,6 +165,69 @@ nav .search form div button {
   left: 42%;
   z-index: 0;
   transform: rotate(310deg);
+}
+
+footer {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+footer .copy {
+  margin-top: 50px;
+  text-align: center;
+  background-color: grey;
+  width: 100%;
+  padding: 10px;
+}
+footer .container {
+  width: 100%;
+  display: flex;
+  margin-left: 0;
+}
+footer .container h3 {
+  color: orange;
+}
+footer .container .cart span {
+  font-size: 1.8em;
+}
+footer .container .location {
+  width: 2100px;
+}
+footer .container .sociais li {
+  margin-bottom: 5px;
+}
+footer .container .sociais li a {
+  color: #fff;
+}
+footer .container .sociais li a i {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  padding: 8px 0px;
+  width: 30px;
+  text-align: center;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+footer .container .sociais li a i:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  transform: rotateY(360deg);
+}
+footer .container div {
+  margin-left: 40px;
+  padding: 0px;
+  width: 100%;
+}
+footer .container div h3 {
+  margin-bottom: 10px;
+}
+footer .container div li {
+  list-style: none;
+}
+footer .container div li a {
+  text-decoration: none;
 }
 
 .bloqueio {
