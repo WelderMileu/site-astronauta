@@ -26,6 +26,10 @@ body{
 	}
 }
 
+#conteudo{
+	columns: 2;
+}
+
 nav{
 	// background-image:url('../img/atlet2.jpg');
 	// background-size: cover;
@@ -81,7 +85,7 @@ nav{
 }
 
 .container{
-	width: 900px;
+	width: 550px;
 	margin-left: 20%;
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -93,7 +97,7 @@ nav{
 		width: 60%;
 		background:transparent;
 		// box-shadow: 20px 10px 30px black;
-		margin-top:30px; 
+		margin-top:0px; 
 		.name{
 			z-index: 1;
 			width: 100px;
@@ -134,7 +138,7 @@ nav{
 			z-index: 1;
 			margin-left: 10px;
 			p{
-				text-align: justify;
+				text-align: left;
 				padding:20px;
 				opacity: .7;
 				// overflow: scroll;
@@ -186,6 +190,9 @@ footer{
 	padding:20px;
 	background-color:$color-01;
 	color: $color-03;
+	a{
+		-o-text-decoration: none;
+	}
 	.copy{
 		margin-top:50px;
 		text-align: center;
@@ -262,8 +269,7 @@ footer{
 	cursor: no-drop;
 	opacity: .2;
 }
-
-@media(max-width: 800px){
+@media(max-width: 300px){
 	.container{
 		margin-left:5%;
 		.content{

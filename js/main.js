@@ -98,10 +98,10 @@
 					<img src="img/${elem.src}">
 				</div>
 				<div class="information">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
+					<h3>Description the products</h3>
+					<p>Venha a nossa loja e conheça os nossos produtos que sao os melhores da regiao,
+						temos muitas promoçães alem de produtos baratos e de qualidade vamo que vamo
+						e nos cara tamo junto.</p>
 					<div class="money">
 						${descont()}
 						<span>
