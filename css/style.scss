@@ -64,7 +64,10 @@ nav{
 		top:70px;
 		form{
 			div{
+				position:relative;
+				left: 100px;
 				input[type='text']{
+					width: 400px;
 					border:none;
 					padding:8px;
 					padding-left:20px;
@@ -78,6 +81,47 @@ nav{
 					border:none;
 					background-color:transparent;
 					cursor: pointer;
+				}
+			}
+		}
+	}
+	.atlet{
+		position:absolute;
+		right: 10%;
+		img{
+			box-shadow:1px 10px 10px black;
+			width: 600px;
+		}
+		p{
+			position:absolute;
+			width: 300px;
+			padding:20px;
+			font-family: 'Arial', sans-serif;
+		}
+	}
+	.itens{
+		p{
+			width: 800px;
+			position:absolute;
+			top:250px;
+			left:200px; 
+			font-size: 5em;
+			z-index: 1000;
+			text-transform:uppercase;
+			opacity: .5;	
+		}
+	}
+	.soc{
+		position:absolute;
+		top:200px;
+		left: 20px;
+		transform: translate(100%, 100%);
+		ul{
+			display: block;
+			li{
+				list-style: none;
+				a{
+					text-decoration:none;
 				}
 			}
 		}

@@ -55,7 +55,12 @@ nav .search {
   right: 900px;
   top: 70px;
 }
+nav .search form div {
+  position: relative;
+  left: 100px;
+}
 nav .search form div input[type=text] {
+  width: 400px;
   border: none;
   padding: 8px;
   padding-left: 20px;
@@ -69,6 +74,45 @@ nav .search form div button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+nav .atlet {
+  position: absolute;
+  right: 10%;
+}
+nav .atlet img {
+  box-shadow: 1px 10px 10px black;
+  width: 600px;
+}
+nav .atlet p {
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+nav .itens p {
+  width: 800px;
+  position: absolute;
+  top: 250px;
+  left: 200px;
+  font-size: 5em;
+  z-index: 1000;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+nav .soc {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  transform: translate(100%, 100%);
+}
+nav .soc ul {
+  display: block;
+}
+nav .soc ul li {
+  list-style: none;
+}
+nav .soc ul li a {
+  text-decoration: none;
 }
 
 .container {
