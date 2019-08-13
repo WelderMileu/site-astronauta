@@ -1,5 +1,5 @@
 (function(){
-	setInterval(alert('Site em desenvolvimento'),3000);
+	// setInterval(alert('Site em desenvolvimento'),3000);
 
 	let products = [
 		{
