@@ -58,8 +58,9 @@ nav{
 				a{
 					text-decoration: none;
 					color:$color-03;
-					font-size: 1.2em;
-					font-family: $font-02;
+					font-size: 1em;
+					font-family: $font-01;
+					text-transform: uppercase;
 				}
 			}
 		}
@@ -123,7 +124,7 @@ nav{
 			position:absolute;
 			top:90px;
 			left: 410px;
-			color:pink;
+			color:orange;
 			transform: rotate(90deg);
 		}
 	}
@@ -148,8 +149,16 @@ nav{
 			display: block;
 			li{
 				list-style: none;
+				transition: .5s;
 				a{
 					text-decoration:none;
+					transition: .5s;
+					&:hover{
+						color:orange;	
+					}
+				}
+				&:hover{
+					transform: scale(2);
 				}
 			}
 		}

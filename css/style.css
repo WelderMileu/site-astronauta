@@ -50,8 +50,9 @@ nav div ul li {
 nav div ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.2em;
-  font-family: "Assistant", sans-serif;
+  font-size: 1em;
+  font-family: "DM Serif Text", serif;
+  text-transform: uppercase;
 }
 nav .search {
   position: relative;
@@ -111,7 +112,7 @@ nav .atlet span {
   position: absolute;
   top: 90px;
   left: 410px;
-  color: pink;
+  color: orange;
   transform: rotate(90deg);
 }
 nav .itens p {
@@ -135,9 +136,17 @@ nav .soc ul {
 }
 nav .soc ul li {
   list-style: none;
+  transition: 0.5s;
 }
 nav .soc ul li a {
   text-decoration: none;
+  transition: 0.5s;
+}
+nav .soc ul li a:hover {
+  color: orange;
+}
+nav .soc ul li:hover {
+  transform: scale(2);
 }
 
 .container {
