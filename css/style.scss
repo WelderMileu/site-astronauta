@@ -124,8 +124,20 @@ nav{
 			position:absolute;
 			top:90px;
 			left: 410px;
-			color:orange;
+			color:$color-02;
 			transform: rotate(90deg);
+		}
+		.ayonic{
+			color:orange;
+			position:absolute;
+			top:265px;
+			left: -10px;
+			i{
+				cursor: pointer;
+			}
+			.fa-circle-thin{
+				margin-right: 5px; 
+			}
 		}
 	}
 	.itens{
@@ -137,7 +149,9 @@ nav{
 			font-size: 5em;
 			z-index: 1000;
 			text-transform:uppercase;
-			opacity: .5;	
+			opacity: .5;
+			text-shadow:1px 1px 1px$color-01,
+						1px 1px 1px $color-01;	
 		}
 	}
 	.soc{

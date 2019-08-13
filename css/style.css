@@ -112,8 +112,20 @@ nav .atlet span {
   position: absolute;
   top: 90px;
   left: 410px;
-  color: orange;
+  color: #999;
   transform: rotate(90deg);
+}
+nav .atlet .ayonic {
+  color: orange;
+  position: absolute;
+  top: 265px;
+  left: -10px;
+}
+nav .atlet .ayonic i {
+  cursor: pointer;
+}
+nav .atlet .ayonic .fa-circle-thin {
+  margin-right: 5px;
 }
 nav .itens p {
   width: 800px;
@@ -124,6 +136,7 @@ nav .itens p {
   z-index: 1000;
   text-transform: uppercase;
   opacity: 0.5;
+  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
 }
 nav .soc {
   position: absolute;
