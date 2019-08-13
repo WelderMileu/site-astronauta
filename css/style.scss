@@ -52,6 +52,7 @@ nav{
 		ul{
 			display: flex;
 			list-style: none;
+			border-bottom: 1px solid $color-02;
 			li{
 				padding:10px;
 				a{
@@ -116,6 +117,14 @@ nav{
 				background-color:transparent;
 				cursor: pointer;
 			}
+		}
+		span{
+			width: 200px;
+			position:absolute;
+			top:90px;
+			left: 410px;
+			color:pink;
+			transform: rotate(90deg);
 		}
 	}
 	.itens{

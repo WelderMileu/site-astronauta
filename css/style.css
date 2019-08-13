@@ -42,6 +42,7 @@ nav .logo span {
 nav div ul {
   display: flex;
   list-style: none;
+  border-bottom: 1px solid #999;
 }
 nav div ul li {
   padding: 10px;
@@ -104,6 +105,14 @@ nav .atlet p button {
   color: #fff;
   background-color: transparent;
   cursor: pointer;
+}
+nav .atlet span {
+  width: 200px;
+  position: absolute;
+  top: 90px;
+  left: 410px;
+  color: pink;
+  transform: rotate(90deg);
 }
 nav .itens p {
   width: 800px;
