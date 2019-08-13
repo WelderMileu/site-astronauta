@@ -58,7 +58,7 @@ nav{
 					text-decoration: none;
 					color:$color-03;
 					font-size: 1.2em;
-					font-family: $font-01;
+					font-family: $font-02;
 				}
 			}
 		}
@@ -66,7 +66,7 @@ nav{
 	.search{
 		position:relative;
 		right: 900px;
-		top:70px;
+		top:30px;
 		form{
 			div{
 				position:relative;
@@ -104,6 +104,18 @@ nav{
 			width: 300px;
 			padding:20px;
 			font-family: $font-02;
+			button{
+				width: 200px;
+				margin-top:10px;
+				border:none;
+				padding:10px;
+				text-transform: uppercase;
+				font-weight: bold;
+				border:1px solid $color-03;
+				color: $color-03;
+				background-color:transparent;
+				cursor: pointer;
+			}
 		}
 	}
 	.itens{

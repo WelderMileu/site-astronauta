@@ -50,12 +50,12 @@ nav div ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.2em;
-  font-family: "DM Serif Text", serif;
+  font-family: "Assistant", sans-serif;
 }
 nav .search {
   position: relative;
   right: 900px;
-  top: 70px;
+  top: 30px;
 }
 nav .search form div {
   position: relative;
@@ -92,6 +92,18 @@ nav .atlet p {
   width: 300px;
   padding: 20px;
   font-family: "Assistant", sans-serif;
+}
+nav .atlet p button {
+  width: 200px;
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
 }
 nav .itens p {
   width: 800px;
